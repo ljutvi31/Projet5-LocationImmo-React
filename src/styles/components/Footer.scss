@@ -1,0 +1,17 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    main {  // élément qu'on utilise dans MainLayout.jsx
+        flex: 1;
+    }
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+      // Ajoute cette ligne pour pousser le footer en bas
+}

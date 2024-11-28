@@ -1,6 +1,7 @@
 header {
     padding: 20px;
-    border-bottom: 1px solid #e0e0e0;
+   display: flex;
+   justify-content: center;
 
     nav {
         display: flex;
@@ -10,6 +11,10 @@ header {
         a {
             text-decoration: none;
             color: #000000;
+            &:hover {
+                color: aqua;
+            }
         }
+        
     }
 }
