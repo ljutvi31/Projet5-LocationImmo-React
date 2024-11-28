@@ -1,0 +1,11 @@
+@import './components/Header.scss';
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}

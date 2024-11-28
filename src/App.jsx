@@ -1,17 +1,12 @@
-import { Routes, Route } from 'react-router-dom'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Housing from './Pages/Housing'
-import Error from './Pages/Error'
+import React from 'react'
+import Router from './components/Router'
+import MainLayout from './layouts/MainLayout'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/housing/:id" element={<Housing />} />
-      <Route path="*" element={<Error />} />
-    </Routes>
+    <MainLayout>
+      <Router />
+    </MainLayout>
   )
 }
 
