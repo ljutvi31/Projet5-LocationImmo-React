@@ -1,9 +1,22 @@
-import React from "react"
+import React from 'react'
+import Banner from '../components/Banner'
+import Card from '../components/Card'
+import logements from '../Data/logements.json'
 
-function Home (){ 
+function Home() {
     return (
         <div>
-            <h1>Home Page</h1>
+            <Banner />
+            <div className="cards-container">
+                {logements.map(logement => (
+                    <Card 
+                        key={logement.id}
+                        id={logement.id}
+                        title={logement.title}
+                        cover={logement.cover}
+                    />
+                ))}
+            </div>
         </div>
     )
 }

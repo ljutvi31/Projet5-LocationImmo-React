@@ -1,0 +1,18 @@
+.banner {
+    position: relative;
+    height: 223px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.8); // Temporaire jusqu'à l'ajout de l'image
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 100px;
+
+    h1 {
+        color: white;
+        font-size: 48px;
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+    }
+}
