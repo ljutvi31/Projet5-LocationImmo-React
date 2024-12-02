@@ -1,6 +1,6 @@
 import React from 'react'
 import Router from './components/Router'
-import MainLayout from './layouts/MainLayout'
+import MainLayout from './components/layouts/MainLayout'
 
 function App() {
   return (
