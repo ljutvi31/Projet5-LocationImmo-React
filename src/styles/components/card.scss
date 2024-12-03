@@ -1,8 +1,10 @@
 .cards-container {
     background: #F6F6F6;
     border-radius: 25px;
-    margin: 50px 100px;
+    margin: 45px 100px;
+    padding: 70px;
     display: grid;
+    grid-template-columns: repeat(3, 340px);
     gap: 30px;  
     justify-content: center;
 }
@@ -12,7 +14,6 @@
     height: 340px;
     border-radius: 10px;
     overflow: hidden;
-    margin: auto;
 
     img {
         width: 100%;
