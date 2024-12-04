@@ -1,9 +1,9 @@
 import React from 'react'
-import banniere from './images/banniere.jpg'  // Import de l'image
+import banner from './images/banner.jpg'  // Import de l'image
 
 function Banner() {
     return (
-        <div className="banner" style={{backgroundImage: `url(${banniere})`}}>
+        <div className="banner" style={{backgroundImage: `url(${banner})`}}>
             <h1>Chez vous, partout et ailleurs</h1>
         </div>
     )

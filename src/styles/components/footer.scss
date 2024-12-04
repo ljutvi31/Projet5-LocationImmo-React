@@ -3,7 +3,7 @@
     flex-direction: column;
     min-height: 100vh;
 
-    main {  // élément qu'on utilise dans MainLayout.jsx
+    main {  
         flex: 1;
     }
 }
@@ -11,8 +11,39 @@
 footer {
     background-color:#000000;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     margin-top: auto;  // Ajoute cette ligne pour pousser le footer en bas
+   
 }
 
+p {
+    color: white;
+    margin: 25px;
+}
 
+.footer-logo {
+    height: auto;
+    width: auto;
+}
+
+/* Styles pour les tablettes */
+@media (max-width: 1024px) {
+    footer {
+        padding: 20px;
+    }
+}
+
+/* Styles pour les mobiles */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .footer-logo {
+        width: 100px;  // Ajustez la taille selon vos besoins
+    }
+}

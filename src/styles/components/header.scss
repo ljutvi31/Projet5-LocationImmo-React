@@ -25,3 +25,24 @@ header {
         }
     }
 }
+
+/* Styles pour les mobiles */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+    }
+
+    nav {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+        height: 50px;
+    }
+}

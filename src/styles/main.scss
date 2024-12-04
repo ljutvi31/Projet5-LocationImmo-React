@@ -1,14 +1,16 @@
-@import 'components/Banner';
-@import 'components/Card';
+@use 'components/Banner';
+@use 'components/Card';
+@use 'components/Collapse';
 
 .cards-container {
     display: grid;
     grid-template-columns: repeat(3, 340px);
-    gap: 200px;
+    gap: 150px;
     justify-content: center;
     padding: 50px;
     background-color: #F6F6F6;
     border-radius: 25px;
+    justify-items: stretch;
 }
 
 .layout {
@@ -17,6 +19,28 @@
     flex-direction: column;
     main {
         flex: 1;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Styles pour les tablettes */
+@media (max-width: 1024px) {
+    footer {
+        padding: 20px;
+    }
+}
+
+/* Styles pour les mobiles */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .footer-logo {
+        width: 100px;  // Ajustez la taille selon vos besoins
     }
 }

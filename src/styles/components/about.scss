@@ -1,0 +1,28 @@
+.about {
+    padding: 20px 100px;
+    
+    &-banner {
+        height: 223px;
+        border-radius: 25px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
+        position: relative;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 25px;
+        }
+    }
+    
+    &__collapses {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

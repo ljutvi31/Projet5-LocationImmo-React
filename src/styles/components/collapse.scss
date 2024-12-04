@@ -1,0 +1,45 @@
+
+.collapse {
+    width: 100%;
+    margin-bottom: 20px;
+
+    &__header {
+        background-color: #FF6060;
+        border-radius: 5px;
+        padding: 13px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        color: white;
+        
+        h2 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+
+    &__chevron {
+        font-size: 24px;
+        transition: transform 0.3s ease;
+        
+        &--open {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__content {
+        background-color: white;
+        padding: 20px;
+        color: #FF6060;
+        border-radius: 0 0 5px 5px;
+        margin-top: -5px;
+        
+        p {
+            color: black;
+            margin: 0;
+            line-height: 1.5;
+        }
+    }
+}
