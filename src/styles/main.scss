@@ -1,6 +1,7 @@
 @use 'components/Banner';
 @use 'components/Card';
 @use 'components/Collapse';
+@use "./slideshow";
 
 .cards-container {
     display: grid;
