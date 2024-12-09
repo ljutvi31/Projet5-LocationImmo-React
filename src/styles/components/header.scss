@@ -1,48 +1,48 @@
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+
+  nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
+    gap: 50px;
 
-    nav {
-        display: flex;
-        gap: 50px;
-
-    .logo { 
-        width: 150px;
-        height: 30px;
+    .logo {
+      width: 150px;
+      height: 30px;
     }
 
-        a {
-            text-decoration: none;
-            color: black;
-            font-size: 24px;
-            font-family: Montserrat;
-            
-            &:hover {
-                text-decoration: underline;
-            }
-        }
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 24px;
+      font-family: Montserrat;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
 }
 
 /* Styles pour les mobiles */
 @media (max-width: 768px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 50px;
-    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
 
-    nav {
-        display: flex;
-        gap: 10px;
-        justify-content: space-between;
-    }
+  nav {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
 
-    .logo {
-        margin-bottom: 20px;
-        height: 50px;
-    }
+  .logo {
+    margin-bottom: 20px;
+    height: 50px;
+  }
 }
