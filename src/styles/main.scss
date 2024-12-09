@@ -1,47 +1,52 @@
-@use 'components/Banner';
-@use 'components/Card';
-@use 'components/Collapse';
+@use "components/banner";
+@use "components/card";
+@use "components/collapse";
 @use "./slideshow";
-
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(3, 340px);
-    gap: 150px;
-    justify-content: center;
-    padding: 50px;
-    background-color: #F6F6F6;
-    border-radius: 25px;
-    justify-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 435px);
+  gap: 40px;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  justify-items: stretch;
 }
 
 .layout {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    main {
-        flex: 1;
-        margin-bottom: 30px;
-    }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  main {
+    flex: 1;
+    margin-bottom: 30px;
+  }
 }
 
 /* Styles pour les tablettes */
 @media (max-width: 1024px) {
-    footer {
-        padding: 20px;
-    }
+  footer {
+    padding: 20px;
+  }
 }
 
 /* Styles pour les mobiles */
 @media (max-width: 768px) {
-    footer {
-        padding: 15px;
-    }
+  footer {
+    padding: 15px;
+  }
 
-    p {
-        font-size: 14px;
-    }
+  p {
+    font-size: 14px;
+  }
 
-    .footer-logo {
-        width: 100px;  // Ajustez la taille selon vos besoins
-    }
+  .footer-logo {
+    width: 100px; // Ajustez la taille selon vos besoins
+  }
 }

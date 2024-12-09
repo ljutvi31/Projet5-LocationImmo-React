@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../images/logo.png'  // Chemin depuis Header vers images
-import '../../styles/components/Header.scss'
+import logo from '../../images/logo.png'  // Chemin depuis Header vers images
+import '../../styles/components/header.scss'
 
 function Header() {
     return (

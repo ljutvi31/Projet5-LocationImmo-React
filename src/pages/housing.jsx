@@ -9,7 +9,7 @@ function Housing() {
 
     // Redirection vers la page d'erreur si le logement n'est pas trouvé
     if (!housing) {
-        return <Navigate to="/error" />;
+        return <Error/>; //charge le composant Error 
     }
 
     return (
