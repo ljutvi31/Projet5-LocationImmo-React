@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
-import logements from "../Data/logements.json";
+import logements from "../data/logements.json";
 
 function Home() {
   return (
