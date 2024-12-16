@@ -3,10 +3,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 100px;
-  background-color: #f8f8f8;
 
   .logo-kasa {
-    width: 150px; 
+    width: 150px;
     height: auto;
 
     @media (max-width: 1024px) {
@@ -14,7 +13,7 @@ header {
     }
 
     @media (max-width: 768px) {
-      width: 110px;
+      width: 100px;  // Logo plus petit en mobile
     }
   }
 
@@ -24,7 +23,6 @@ header {
 
     a {
       text-decoration: none;
-      color: #000000;
       font-size: 24px;
       font-family: "Montserrat", sans-serif;
 
@@ -33,24 +31,26 @@ header {
       }
 
       @media (max-width: 768px) {
-        font-size: 15px; // Réduction taille des liens
+        font-size: 12px;  // Taille plus petite
+        text-transform: uppercase;  // Texte en majuscules
+        font-weight: 500;  // Police un peu plus épaisse
       }
     }
 
     @media (max-width: 1024px) {
-      gap: 40px; // Réduction pour tablette
+      gap: 40px;
     }
 
     @media (max-width: 768px) {
-      gap: 20px; // Réduction pour mobile
+      gap: 10px;  // Réduction plus importante de l'espacement en mobile
     }
   }
 
   @media (max-width: 1024px) {
-    padding: 20px 60px; // Padding réduit pour tablette
+    padding: 20px 60px;
   }
 
   @media (max-width: 768px) {
-    padding: 20px 20px; // Padding réduit pour mobile
+    padding: 20px;
   }
 }

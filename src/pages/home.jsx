@@ -1,19 +1,19 @@
 import React from "react";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
-import logements from "../data/logements.json";
+import housings from "../data/housings.json";
 
 function Home() {
   return (
     <div>
       <Banner />
       <div className="cards-container">
-        {logements.map((logement) => (
+        {housings.map((housings) => (
           <Card
-            key={logement.id}
-            id={logement.id}
-            title={logement.title}
-            cover={logement.cover}
+            key={housings.id}
+            id={housings.id}
+            title={housings.title}
+            cover={housings.cover}
           />
         ))}
       </div>

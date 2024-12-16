@@ -3,12 +3,12 @@ import { useParams } from 'react-router-dom';
 import Slideshow from '../components/Slideshow';
 import Error from '../pages/error';
 import Collapse from '../components/Collapse';
-import logements from '../data/logements.json';
+import housings from '../data/housings.json';
 import '../styles/components/housing.scss';
 
 function Housing() {
     const { id } = useParams();
-    const housing = logements.find(logement => logement.id === id);
+    const housing = housings.find(housings => housings.id === id);
 
     if (!housing) {
         return <Error />;
@@ -22,7 +22,7 @@ function Housing() {
             <div className="housing__content">
                 {/* Section principale avec titre, localisation, tags et hôte */}
                 <div className="housing__header">
-                    {/* Partie gauche : info logement */}
+                    {/* Partie gauche : info housings */}
                     <div className="housing__info">
                         <h1>{housing.title}</h1>
                         <p className="housing__location">{housing.location}</p>
