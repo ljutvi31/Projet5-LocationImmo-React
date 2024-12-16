@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   margin: 30px 100px;
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -15,7 +15,7 @@
     border-radius: 25px;
     background: rgba(0, 0, 0, 0.5);
   }
-  
+
   h1 {
     color: white;
     font-size: 48px;
@@ -26,7 +26,6 @@
     position: relative;
   }
 
-  // Tablette
   @media (min-width: 768px) and (max-width: 1024px) {
     margin: 20px 50px;
     height: 150px;
@@ -37,7 +36,6 @@
     }
   }
 
-  // Mobile
   @media (max-width: 767px) {
     margin: 20px;
     height: 111px;

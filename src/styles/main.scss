@@ -1,42 +1,43 @@
-// Imports des composants
 @use "components/banner";
 @use "components/card";
 @use "components/collapse";
 @use "./slideshow";
 
-// Styles globaux
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .layout {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    main {
-        flex: 1;
-        margin-bottom: 30px;
-    }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  main {
+    flex: 1;
+    margin-bottom: 30px;
+  }
 }
 
-// Media queries pour les éléments globaux
+p{
+  margin: auto;
+}
+
 @media (max-width: 1024px) {
-    footer {
-        padding: 20px;
-    }
+  footer {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 768px) {
-    footer {
-        padding: 15px;
-    }
-    p {
-        font-size: 14px;
-    }
-    .footer-logo {
-        width: 100px;
-    }
+  footer {
+    padding: 15px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .footer-logo {
+    width: 100px;
+  }
 }

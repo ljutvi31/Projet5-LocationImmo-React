@@ -1,33 +1,69 @@
 .error {
-    color: #FF6060;
-    text-align: center;
-    padding: 100px 20px;
-    min-height: calc(100vh - 300px); // Ajustez selon la hauteur de votre header/footer
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  color: #ff6060;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: calc(100vh - 300px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    font-size: 263px;
+    margin: 0;
+    line-height: 1;
+  }
+
+  &__text {
+    color: #ff6060;
+    font-size: 36px;
+    margin: 50px 0;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-top: 100px;
+
+    &:hover {
+      color: #ff6060;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 50px 20px;
 
     &__title {
-        font-size: 263px;
-        margin: 0;
-        line-height: 1;
+      font-size: 280px;
     }
 
     &__text {
-        color: #FF6060;
-        font-size: 36px;
-        margin: 50px 0;
+      font-size: 28px;
+      margin: 30px 0;
     }
 
     &__link {
-        color: black;
-        text-decoration: underline;
-        font-size: 18px;
-        margin-top: 100px;
-
-        &:hover {
-            color: #FF6060;
-        }
+      font-size: 16px;
+      margin-top: 50px;
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+
+    &__title {
+      font-size: 150px;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    &__link {
+      font-size: 14px;
+      margin-top: 30px;
+    }
+  }
 }

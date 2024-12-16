@@ -13,7 +13,7 @@ header {
     }
 
     @media (max-width: 768px) {
-      width: 100px;  // Logo plus petit en mobile
+      width: 100px;
     }
   }
 
@@ -31,9 +31,9 @@ header {
       }
 
       @media (max-width: 768px) {
-        font-size: 12px;  // Taille plus petite
-        text-transform: uppercase;  // Texte en majuscules
-        font-weight: 500;  // Police un peu plus épaisse
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
       }
     }
 
@@ -42,7 +42,7 @@ header {
     }
 
     @media (max-width: 768px) {
-      gap: 10px;  // Réduction plus importante de l'espacement en mobile
+      gap: 10px;
     }
   }
 

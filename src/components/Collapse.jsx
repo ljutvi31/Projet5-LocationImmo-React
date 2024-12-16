@@ -1,26 +1,37 @@
-import React, { useState } from "react";
-import "../styles/components/collapse.scss";
+// src/components/Collapse.jsx
+import React, { useState } from 'react';
 
 function Collapse({ title, content }) {
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <div className="collapse">
-      <div className="collapse__header" onClick={() => setIsOpen(!isOpen)}>
-        <h2>{title}</h2>
-        <i
-          className={`fas fa-chevron-down collapse__chevron ${
-            isOpen ? "collapse__chevron--open" : ""
-          }`}
-        ></i>
-      </div>
-      {isOpen && (
-        <div className="collapse__content">
-          <p>{content}</p>
+    const renderContent = () => {
+        // Si le contenu est un tableau ou doit être affiché comme une liste
+        if (Array.isArray(content)) {
+            return (
+                <ul>
+                    {content.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
+            );
+        }
+        // Si c'est du texte simple
+        return <div>{content}</div>;  // Changé de <p> à <div>
+    };
+
+    return (
+        <div className="collapse">
+            <button className="collapse__button" onClick={() => setIsOpen(!isOpen)}>
+                {title}
+                <i className={`fas fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
+            </button>
+            {isOpen && (
+                <div className="collapse__content">
+                    {renderContent()}
+                </div>
+            )}
         </div>
-      )}
-    </div>
-  );
+    );
 }
 
 export default Collapse;

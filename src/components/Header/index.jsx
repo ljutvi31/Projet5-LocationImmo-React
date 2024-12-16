@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/logo.png"; // Chemin depuis Header vers images
+import logo from "../../images/logo.png";
 import "../../styles/components/header.scss";
 
 function Header() {
@@ -11,7 +11,7 @@ function Header() {
       </Link>
       <nav>
         <Link to="/">Accueil</Link>
-        <Link to="/about">À Propos</Link>
+        <Link to="/about">A propos</Link>
       </nav>
     </header>
   );
