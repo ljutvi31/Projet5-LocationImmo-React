@@ -2,6 +2,9 @@ import React, { useState } from "react";
 
 function Slideshow({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  if (!pictures) { // vérification si pas de picture, retourne un tableau vide // 
+    return [];
+  }
   const length = pictures.length;
 
   if (length <= 1) {

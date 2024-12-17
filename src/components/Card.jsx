@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 function Card({ id, title, cover }) {
@@ -9,5 +10,12 @@ function Card({ id, title, cover }) {
     </Link>
   );
 }
+
+// Validation des props avec PropTypes
+Card.propTypes = {
+  id: PropTypes.string.isRequired,  // id, title et cover sont une chaîne de caractères et est obligatoire
+  title: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired, 
+};
 
 export default Card;
