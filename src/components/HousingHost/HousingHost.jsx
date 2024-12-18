@@ -22,3 +22,5 @@ function HousingHost({ host, rating }) {
     </div>
   );
 }
+
+export default HousingHost;

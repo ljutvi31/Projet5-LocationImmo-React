@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../components/Banner"; // On utilise le Banner existant
+import Banner from "../components/Banner"; 
 import Collapse from "../components/Collapse";
 import aboutbanner from "../images/aboutbanner.jpg";
 import "../styles/components/about.scss";

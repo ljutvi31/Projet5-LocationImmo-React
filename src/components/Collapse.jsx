@@ -4,7 +4,6 @@ function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const renderContent = () => {
-    // Si le contenu est un tableau ou doit être affiché comme une liste
     if (Array.isArray(content)) {
       return (
         <ul>
@@ -14,8 +13,7 @@ function Collapse({ title, content }) {
         </ul>
       );
     }
-    // Si c'est du texte simple
-    return <div>{content}</div>; // Changé de <p> à <div>
+    return <div>{content}</div>;
   };
 
   return (

@@ -13,3 +13,5 @@ function HousingInfo({ title, location, tags }) {
     </div>
   );
 }
+
+export default HousingInfo;

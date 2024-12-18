@@ -21,3 +21,5 @@ function HousingDetails({ description, equipments }) {
     </div>
   );
 }
+
+export default HousingDetails;
