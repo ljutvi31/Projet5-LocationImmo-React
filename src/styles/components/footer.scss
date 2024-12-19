@@ -12,7 +12,7 @@ footer {
   background-color: #000000;
   text-align: center;
   padding: 30px;
-  margin-top: auto; // Ajoute cette ligne pour pousser le footer en bas
+  margin-top: auto; 
 }
 
 p {
@@ -25,14 +25,12 @@ p {
   width: auto;
 }
 
-/* Styles pour les tablettes */
 @media (max-width: 1024px) {
   footer {
     padding: 20px;
   }
 }
 
-/* Styles pour les mobiles */
 @media (max-width: 768px) {
   footer {
     padding: 15px;
@@ -43,6 +41,6 @@ p {
   }
 
   .footer-logo {
-    width: 100px; // Ajustez la taille selon vos besoins
+    width: 100px;
   }
 }
