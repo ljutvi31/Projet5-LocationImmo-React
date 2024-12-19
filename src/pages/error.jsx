@@ -5,7 +5,8 @@ import "../styles/components/error.scss";
 function Error({
   errorCode = 404,
   messageError = "Oups! La page que vous demandez n'existe pas.",
-  linkPath = "/"
+  linkPath = "/",
+  linkText = "Retourner sur la page d'accueil" 
 }) {
   return (
     <div className="error">
